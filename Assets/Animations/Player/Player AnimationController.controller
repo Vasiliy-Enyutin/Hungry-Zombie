@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Walking
+    m_ConditionEvent: Running
     m_EventTreshold: 0.4
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5339310302873235617}
@@ -56,10 +56,10 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shaman AnimationController
+  m_Name: Player AnimationController
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Walking
+  - m_Name: Running
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -87,7 +87,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Walking
+    m_ConditionEvent: Running
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8607924573708476592}
