@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.nbednyakov.fsm": {
-      "version": "https://github.com/DuLovell/finite-state-machine.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "2ed2adf6a7304c04b09ec692e3b6022dd71e4eb1"
-    },
     "com.unity.adaptiveperformance": {
       "version": "4.0.1",
       "depth": 1,
