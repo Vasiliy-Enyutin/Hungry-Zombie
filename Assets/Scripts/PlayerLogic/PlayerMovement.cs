@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 namespace PlayerLogic
 {
@@ -8,10 +9,18 @@ namespace PlayerLogic
     {
         private CharacterController _characterController;
         private PlayerStats _playerStats;
+
+        private IPlayerInputService _playerInputService;
         
         private Vector3 _moveDirection;
 
-
+        
+        [Inject]
+        private void Construct(IPlayerInputService playerInputService)
+        {
+            _playerInputService = playerInputService;
+        }
+        
         private void Awake()
         {
             _characterController = GetComponent<CharacterController>();
@@ -25,7 +34,7 @@ namespace PlayerLogic
 
         private void Move()
         {
-            _moveDirection = PlayerInputReader.Instance.MoveDirection;
+            _moveDirection = _playerInputService.MoveDirection;
             if (_moveDirection.magnitude > 1)
             {
                 _moveDirection.Normalize();
