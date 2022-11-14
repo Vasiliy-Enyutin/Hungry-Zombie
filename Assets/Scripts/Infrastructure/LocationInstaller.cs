@@ -11,13 +11,11 @@ namespace Infrastructure
         
         [SerializeField] private Transform _canvasUI;
         [SerializeField] private GameObject _floatingJoystick;
-        
-        [SerializeField] private PlayerInputService _playerInputService;
 
         public override void InstallBindings()
         {
             BindJoystick();
-            BindPlayerInputService();
+            //BindPlayerInputService();
             BindPlayer();
         }
 
@@ -34,8 +32,7 @@ namespace Infrastructure
 
         private void BindPlayerInputService()
         {
-            Container.Bind<IPlayerInputService>().To<PlayerInputService>().FromComponentInNewPrefab(_playerInputService)
-                .AsSingle();
+            Container.Bind<IPlayerInputService>().To<PlayerInputService>().AsSingle();
         }
 
         private void BindPlayer()
