@@ -1,15 +1,13 @@
 using UnityEngine;
-using Zenject;
 
 namespace PlayerLogic
 {
-    public class PlayerInputService : MonoBehaviour, IPlayerInputService
+    public class PlayerInputService : IPlayerInputService
     {
         private FloatingJoystick _joystick;
 
-
-        [Inject]
-        private void Construct(FloatingJoystick joystick)
+        
+        public PlayerInputService(FloatingJoystick joystick)
         {
             _joystick = joystick;
         }
