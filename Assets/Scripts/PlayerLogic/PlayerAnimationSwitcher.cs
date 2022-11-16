@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PlayerLogic
 {
-    public class AnimationManager : MonoBehaviour
+    public class PlayerAnimationSwitcher : MonoBehaviour
     {
         [SerializeField] private CharacterController _characterController;
         [SerializeField] private Animator _animator;
