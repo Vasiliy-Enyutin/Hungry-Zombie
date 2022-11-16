@@ -424,7 +424,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1031404103}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &245234377
 MonoBehaviour:
@@ -800,10 +800,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 245234376}
   - {fileID: 1055849134}
-  - {fileID: 1173897681}
   - {fileID: 1654386472}
+  - {fileID: 245234376}
+  - {fileID: 1173897681}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -837,7 +837,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1031404103}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1055849135
 MonoBehaviour:
@@ -901,7 +901,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1031404103}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599390641
 GameObject:
@@ -1078,7 +1078,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1031404103}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1845902488
 GameObject:
@@ -1181,7 +1181,7 @@ PrefabInstance:
     - target: {fileID: 1400016270678417784, guid: a6a9f074b63b9224693f58c65f43ef3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.05
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 1400016270678417784, guid: a6a9f074b63b9224693f58c65f43ef3e,
         type: 3}
@@ -1232,6 +1232,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy spawn point
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400016270678417787, guid: a6a9f074b63b9224693f58c65f43ef3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6a9f074b63b9224693f58c65f43ef3e, type: 3}
