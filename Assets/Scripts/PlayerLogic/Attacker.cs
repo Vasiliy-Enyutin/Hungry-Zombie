@@ -7,7 +7,6 @@ namespace PlayerLogic
         [SerializeField] private float _damage;
         
         private CollisionDetector _collisionDetector;
-        private IDamageable _damageableObject;
 
         private bool _isAttacking = false;
 
